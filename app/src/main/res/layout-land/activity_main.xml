@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".views.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score"
+                    android:textSize="28sp">
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/textScore"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="28sp">
+                </TextView>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </Space>
+            <LinearLayout
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textSize="28sp">
+                </TextView>
+
+
+                <Chronometer
+                    android:id="@+id/textTimer"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="28sp">
+                </Chronometer>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </Space>
+            <LinearLayout
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonFinish"
+                    android:layout_width="match_parent"
+                    android:text="Finish"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:layout_height="match_parent">
+                </Button>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </Space>
+            <LinearLayout
+                android:background="@drawable/bg_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonRestart"
+                    android:layout_width="match_parent"
+                    android:text="Restart"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_button"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:layout_height="match_parent">
+                </Button>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="@drawable/background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+
+            <RelativeLayout
+                android:id="@+id/group"
+                android:background="@drawable/frame_bg"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="300dp">
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:text="1"
+                    style="@style/butoons"
+                    tools:ignore="HardcodedText" />
+                <Button
+                    android:id="@+id/bt2"
+                    android:text="2"
+                    style="@style/butoons"
+                    android:layout_toRightOf="@+id/bt1"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt3"
+                    android:text="3"
+                    style="@style/butoons"
+                    android:layout_toRightOf="@+id/bt2"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt4"
+                    android:text="4"
+                    style="@style/butoons"
+                    android:layout_toRightOf="@+id/bt3"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt5"
+                    android:text="5"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt1"
+                    tools:ignore="HardcodedText">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt6"
+                    android:text="6"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt1"
+                    android:layout_toRightOf="@+id/bt1"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt7"
+                    android:text="7"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt1"
+                    android:layout_toRightOf="@+id/bt6"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt8"
+                    android:text="8"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt1"
+                    android:layout_toRightOf="@+id/bt7"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt9"
+                    android:text="9"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt5"
+                    tools:ignore="HardcodedText">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt10"
+                    android:text="10"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt5"
+                    android:layout_toRightOf="@+id/bt9"
+                    tools:ignore="HardcodedText">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt11"
+                    android:text="11"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt5"
+                    android:layout_toRightOf="@+id/bt10"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt12"
+                    android:text="12"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt5"
+                    android:layout_toRightOf="@+id/bt11"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt13"
+                    android:text="13"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt9"
+                    tools:ignore="HardcodedText">
+                </Button>
+
+                <Button
+                    android:id="@+id/bt14"
+                    android:text="14"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt9"
+                    android:layout_toRightOf="@+id/bt13"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+                <Button
+                    android:id="@+id/bt15"
+                    android:text="15"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt9"
+                    android:layout_toRightOf="@+id/bt14"
+                    tools:ignore="HardcodedText,RtlHardcoded">
+                </Button>
+
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/bt16"
+                    style="@style/butoons"
+                    android:layout_below="@+id/bt9"
+                    android:layout_toRightOf="@+id/bt15"
+                    tools:ignore="RtlHardcoded">
+                </Button>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/confirm_layout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8377C527"
+        android:clickable="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cofirmdialog_bg">
+
+            <TextView
+                android:id="@+id/confirm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you want to continue the game"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_horizontal" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Cancel"
+                android:id="@+id/cancelButton"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/confirm_text"
+                tools:ignore="HardcodedText"
+                app:layout_constraintRight_toLeftOf="@id/continueButton"/>
+            <Button
+                android:id="@+id/continueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                tools:ignore="HardcodedText"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/confirm_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/cancelButton"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+
+</FrameLayout>
